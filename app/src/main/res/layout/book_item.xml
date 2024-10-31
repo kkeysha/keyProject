@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:elevation="8dp"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Profile Picture -->
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/baseline_insert_photo_24"
+            android:layout_gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Profile Image"/>
+
+        <LinearLayout
+            android:layout_width="217dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- Name -->
+            <TextView
+                android:id="@+id/nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Nama"
+                android:textColor="@android:color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Alias -->
+            <TextView
+                android:id="@+id/np"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Nama Panggilan"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <!-- Email -->
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Email"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <!-- Address -->
+            <TextView
+                android:id="@+id/alamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Alamat"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <!-- Birth Date -->
+            <TextView
+                android:id="@+id/tglLahir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Tanggal Lahir"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <!-- Phone Number -->
+            <TextView
+                android:id="@+id/HP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nomor Handphone"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Edit and Delete Buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/baseline_delete_24"
+                android:contentDescription="Delete Icon"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/baseline_edit_24" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

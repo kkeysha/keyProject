@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="17dp"
+        android:text="Update Book"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/judul"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="75dp"
+        app:cardElevation="8dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/updatefoto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_insert_photo_24" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note: Image harus di Isi!!!"
+        android:textSize="13sp"
+        android:textStyle="italic"
+        android:layout_below="@id/cardView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/updateNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama"
+        android:background="@drawable/round"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:drawablePadding="10dp"
+        android:padding="20dp"
+        android:backgroundTint="@color/pink"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_below="@id/note"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/updateNP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Panggilan"
+        android:background="@drawable/round"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:drawablePadding="10dp"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:backgroundTint="@color/pink"
+        android:layout_below="@id/updateNama"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/updateEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:background="@drawable/round"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:drawablePadding="10dp"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:backgroundTint="@color/pink"
+        android:layout_below="@id/updateNP"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/updateAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Alamat"
+        android:background="@drawable/round"
+        android:drawableStart="@drawable/baseline_location_on_24"
+        android:drawablePadding="10dp"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/pink"
+        android:textColorHint="@color/black"
+        android:layout_below="@id/updateEmail"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/updateTglLahir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tanggal Lahir"
+        android:background="@drawable/round"
+        android:drawableStart="@drawable/baseline_date_range_24"
+        android:drawablePadding="10dp"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/pink"
+        android:textColorHint="@color/black"
+        android:layout_below="@id/updateAlamat"
+        android:layout_marginTop="10dp" />
+
+    <EditText
+        android:id="@+id/updateHP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/pink"
+        android:hint="Nomor Telepon"
+        android:inputType="phone"
+        android:background="@drawable/round"
+        android:drawableStart="@drawable/baseline_call_24"
+        android:drawablePadding="10dp"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_below="@id/updateTglLahir"
+        android:layout_marginTop="10dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/doneup"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/pink"
+        android:src="@drawable/baseline_done_24" />
+
+
+</RelativeLayout>
